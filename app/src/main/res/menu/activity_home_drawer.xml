@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/order"
+            android:icon="@drawable/cart"
+            android:title="Order" />
+        <item
+            android:id="@+id/orderHistory"
+            android:icon="@drawable/history"
+            android:title="Order History" />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notification"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/offerList"
+            android:icon="@drawable/offer"
+            android:title="Offer List" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/mobile"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/share"
+            android:title="Refer and Earn" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

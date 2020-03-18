@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "320558506055",
+    "firebase_url": "https://mymeal-5ded3.firebaseio.com",
+    "project_id": "mymeal-5ded3",
+    "storage_bucket": "mymeal-5ded3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320558506055:android:41cf5ef7728c13a7",
+        "android_client_info": {
+          "package_name": "com.example.mymeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320558506055-bba2lhelgfqtimecenc7gbtb1di3nhoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mymeal",
+            "certificate_hash": "a75ed9b33f454644a0f2658be9dab216d0b404f4"
+          }
+        },
+        {
+          "client_id": "320558506055-3tva325vqpgeiui0elfmkg9s3lif4rsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9_S4juaQzAaQsDPpbIR-AeRdtbILcGf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320558506055-3tva325vqpgeiui0elfmkg9s3lif4rsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

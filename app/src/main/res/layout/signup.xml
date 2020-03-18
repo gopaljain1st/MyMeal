@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grdient1"
+    android:layout_height="match_parent">
+  <ImageView
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@mipmap/fork"
+      />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#fff"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/person"
+            android:id="@+id/etName"
+            android:ems="13"
+            android:padding="5dp"
+            android:gravity="fill"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#fff"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/mobile"
+            android:ems="13"
+            android:id="@+id/etMobile"
+            android:padding="5dp"
+            android:gravity="fill"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:hint="Mobile" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#fff"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="#000"
+            android:id="@+id/etEmail"
+            android:drawableRight="@drawable/email"
+            android:ems="13"
+            android:padding="5dp"
+            android:gravity="fill"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:hint="Email" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#fff"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="#000"
+            android:drawableRight="@drawable/password"
+            android:id="@+id/etPassword"
+            android:ems="13"
+            android:padding="5dp"
+            android:gravity="fill"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:ems="8"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@drawable/arrow_forward"
+        android:id="@+id/btnsingup"
+        android:text="Sign Up"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>
