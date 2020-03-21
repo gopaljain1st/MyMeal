@@ -56,14 +56,14 @@ public class AllFood extends Fragment
                 pd.dismiss();
                 for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
                 {
-                    dataSnapshot.getKey();
+                    String id=dataSnapshot.getKey();
                     String name= dataSnapshot1.child("Name").getValue().toString();
                     String imageUrl=dataSnapshot1.child("Image").getValue().toString();
                     String desc=dataSnapshot1.child("Description").getValue().toString();
                     String price=dataSnapshot1.child("Price").getValue().toString();
                     String menuId=dataSnapshot1.child("MenuId").getValue().toString();
                     String discount=dataSnapshot1.child("Discount").getValue().toString();
-                    Food f=new Food(name,imageUrl,desc,price,discount,menuId);
+                    Food f=new Food(name,imageUrl,desc,price,discount,menuId,id);
                     al.add(f);
                 }
                 adapter.notifyDataSetChanged();

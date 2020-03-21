@@ -9,6 +9,10 @@
             android:icon="@drawable/cart"
             android:title="Order" />
         <item
+            android:id="@+id/favourite"
+            android:icon="@drawable/favouritedp"
+            android:title="Favourite"/>
+        <item
             android:id="@+id/orderHistory"
             android:icon="@drawable/history"
             android:title="Order History" />

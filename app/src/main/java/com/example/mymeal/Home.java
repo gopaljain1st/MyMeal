@@ -98,14 +98,18 @@ public class Home extends AppCompatActivity
                 pd.dismiss();
                 for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
                 {
-                    String name= dataSnapshot1.child("Name").getValue().toString();
-                    String imageUrl=dataSnapshot1.child("Image").getValue().toString();
-                    String desc=dataSnapshot1.child("Description").getValue().toString();
-                    String price=dataSnapshot1.child("Price").getValue().toString();
-                    String menuId=dataSnapshot1.child("MenuId").getValue().toString();
-                    String discount=dataSnapshot1.child("Discount").getValue().toString();
-                    Food f=new Food(name,imageUrl,desc,price,discount,menuId);
-                    al2.add(f);
+                    String menuId = dataSnapshot1.child("MenuId").getValue().toString();
+                    if(menuId.equals("01"))
+                    {
+                        String id=dataSnapshot1.getKey();
+                        String name = dataSnapshot1.child("Name").getValue().toString();
+                        String imageUrl = dataSnapshot1.child("Image").getValue().toString();
+                        String desc = dataSnapshot1.child("Description").getValue().toString();
+                        String price = dataSnapshot1.child("Price").getValue().toString();
+                        String discount = dataSnapshot1.child("Discount").getValue().toString();
+                        Food f = new Food(name, imageUrl, desc, price, discount, menuId,id);
+                        al2.add(f);
+                    }
                 }
                 adapter2.notifyDataSetChanged();
             }
@@ -123,8 +127,9 @@ public class Home extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+               // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+              Intent in=new Intent(Home.this,CartActivity.class);
+              startActivity(in);
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -179,7 +184,13 @@ public class Home extends AppCompatActivity
 
         if (id == R.id.order)
         {
-            // Handle the camera action
+            Intent in=new Intent(this,CartActivity.class);
+            startActivity(in);
+        }
+        else if(id == R.id.favourite)
+        {
+            Intent in=new Intent(this,FavouriteActivity.class);
+            startActivity(in);
         }
         else if (id == R.id.orderHistory)
         {

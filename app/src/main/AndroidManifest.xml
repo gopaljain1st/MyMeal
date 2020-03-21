@@ -24,6 +24,9 @@
         <activity android:name=".SingIn" />
         <activity android:name=".SingUp" />
         <activity android:name=".Welcome" />
+        <activity android:name=".CartActivity"/>
+        <activity android:name=".FavouriteActivity"/>
+
     </application>
 
 </manifest>
