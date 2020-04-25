@@ -1,5 +1,5 @@
 # MyMeal
-##Food Application
+## Food Application
 #### This is an Android Application which is used to order food online 
 ### Sample Images
 
